@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Перегляд медіа</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+  <h1>Перегляд медіа</h1>
+
+  <!-- Блоки для медіа (Фільми, Серіали, Шоу, Мультфільми) -->
+  <div class="media-grid">
+    <div class="media-block" id="films">
+      <div class="icon">&#127909;</div> <!-- Іконка фільму -->
+      <h3>Фільми</h3>
+      <ul class="movie-list"></ul> <!-- Список фільмів -->
+    </div>
+
+    <div class="media-block" id="series">
+      <div class="icon">&#128250;</div> <!-- Іконка серіалів -->
+      <h3>Серіали</h3>
+      <ul class="movie-list"></ul> <!-- Список серіалів -->
+    </div>
+
+    <div class="media-block" id="shows">
+      <div class="icon">&#127912;</div> <!-- Іконка шоу -->
+      <h3>Шоу</h3>
+      <ul class="movie-list"></ul> <!-- Список шоу -->
+    </div>
+
+    <div class="media-block" id="cartoons">
+      <div class="icon">&#128118;</div> <!-- Іконка мультфільмів -->
+      <h3>Мультфільми</h3>
+      <ul class="movie-list"></ul> <!-- Список мультфільмів -->
+    </div>
+  </div>
+
+  <!-- Новий блок для медіа, яке переглянули -->
+
+
+  <!-- Форма для додавання фільму -->
+  <div class="add-movie-block">
+    <h2>Додати новий медіа-контент</h2>
+    <form id="add-movie-form">
+      <input type="text" id="movie-name" placeholder="Введіть назву" required>
+      <select id="category">
+        <option value="films">Фільми</option>
+        <option value="series">Серіали</option>
+        <option value="shows">Шоу</option>
+        <option value="cartoons">Мультфільми</option>
+      </select>
+      <button type="submit">Додати</button>
+    </form>
+  </div>
+</div>
+
+<div class="add-movie-block">
+  <div  id="watched">
+    <div class="icon">&#128064;</div> <!-- Іконка медіа -->
+    <h3>Медіа, яке переглянули</h3>
+    <ul class="movie-list"></ul> <!-- Список переглянутого медіа -->
+  </div>
+</div>
+
+<!--button id="clear-storage" >Очистити всі дані/button> -->
+
+<script src="script.js"></script>
+
+</body>
+</html>
